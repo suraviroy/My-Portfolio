@@ -55,6 +55,8 @@ import sbh23 from '../../images/sbh2023.jpeg';
 import sih from '../../images/sih.jpeg';
 import ciem from '../../images/ciem.jpeg';
 import sbh24 from '../../images/sbh2024.jpeg';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 const achievements = [
   {
@@ -89,6 +91,7 @@ const achievements = [
   },
 ];
 
+
 const Achievements = () => {
   const [selectedAchievement, setSelectedAchievement] = useState(null);
 
@@ -101,7 +104,9 @@ const Achievements = () => {
     setSelectedAchievement(null);
     document.body.style.overflow = 'auto';
   };
-
+  React.useEffect(() => {
+    AOS.init();
+}, []);
   return (
     <div className="Achievements-timeline">
       <div className="Achievements-timeline-h1">WHAT I HAVE ACHIEVE SO FAR</div>
@@ -109,7 +114,9 @@ const Achievements = () => {
       <div className="Achievements-timelineP"></div>
       {achievements.map((achievement, index) => (
         <div
-          key={index}
+          key={index} 
+          data-aos={index % 2 === 0 ? 'fade-right' : 'fade-left'}
+          data-aos-delay={0 + index * 200}
           className={`Achievements-container ${index % 2 === 0 ? 'left' : 'right'}`}
           onClick={() => openModal(achievement)}
         >
