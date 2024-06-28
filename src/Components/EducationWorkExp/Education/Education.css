@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+.education-container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.education-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.education-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: solid 4px var(--primary-pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.education-circle i {
+    font-size: 38px;
+    color: var(--primary-pink);
+}
+
+.education-txt {
+    color: var(--primary-pink);
+    font-weight: 500;
+    font-size: 2em;
+}
+
+.education-timeline {
+    position: relative;
+    padding-left: 55px;
+}
+
+.education-timeline:before {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: 5px;
+    bottom: 0;
+    width: 3px;
+    background: var(--primary-pink);
+}
+
+.education-timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.education-timeline-content {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+.education-dot {
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary-pink);
+    border-radius: 50%;
+    position: absolute;
+    left: -25px;
+    top: 1px;
+
+}
+
+.education-box {
+    margin-top: 3vh;
+    padding: 15px;
+    background-color: var(--primary-deepblack);
+    border: 3px solid var(--primary-pink);
+    border-radius: 1.5rem;
+    margin-left: 15px;
+    color: var(--primary-white);
+    box-shadow: 0 0 10px rgba(192, 2, 70, 0.6),
+        0 0 10px rgba(192, 2, 70, 0.6),
+        0 0 15px rgba(192, 2, 70, 0.6);
+
+}
+
+.education-box p {
+    margin: 7px 0;
+    /* Adjusted margin to reduce gap between paragraphs */
+}
+
+.education-details1 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.education-details2 {
+    font-size: 16px;
+    font-weight: lighter;
+    padding-bottom: 7px;
+}
+
+.education-details3 {
+    font-size: 14px;
+}
+
+@media (min-width: 550px) {
+    .education-box {
+
+        width: 400px;
+
+
+    }
+}

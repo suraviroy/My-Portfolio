@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+.Copyright-App {
+    text-align: center;
+    padding: 20px;
+}
+
+.Copyright-heading {
+    color: var(--primary-white);
+    font-size: 1em;
+    margin-bottom: 7px;
+    font-weight: 300;
+}
+
+.Copyright-subheading {
+    color: var(--primary-pink);
+    font-size: 3.5em;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.Copyright-timeline {
+    position: relative;
+    margin: 0 auto;
+    padding: 10px 30px;
+    width: 80%;
+    max-width: 800px;
+    cursor: pointer;
+    border-right: 3px solid var(--primary-pink);
+}
+
+.Copyright-timeline-item {
+    margin: 20px 0;
+    position: relative;
+    padding-left: 40px;
+}
+
+.Copyright-timeline-item:before {
+    content: '';
+    position: absolute;
+    right: -37px;
+    top: 5px;
+    height: 14px;
+    width: 14px;
+    background-color: var(--primary-pink);
+    border-radius: 50%;
+ 
+}
+
+.Copyright-timeline-date {
+    font-size: 0.9em;
+    color: var(--primary-pink);
+    margin-bottom: 10px;
+}
+
+.Copyright-timeline-content {
+    background: var(--primary-deepblack);
+    padding: 25px;
+    border-radius: 8px;
+    border: 2px solid var(--primary-pink);
+    box-shadow: 0 0 10px rgba(192, 2, 70, 0.6),
+    0 0 10px rgba(192, 2, 70, 0.6),
+    0 0 15px rgba(192, 2, 70, 0.6);
+    margin-bottom: 5vh;
+}
+
+.Copyright-timeline-content h3 {
+    margin-top: 0;
+}
+
+.Copyright-timeline-content p {
+    margin: 5px 0 0;
+}
+.Copyright-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+.Copyright-modal-content {
+    background: var(--primary-deepblack);
+    border: 2px solid var(--primary-pink);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: var(--primary-white);
+    position: relative;
+    max-width: 600px;
+    max-height: 60vh;
+    overflow-y: auto;
+    z-index: 1100;
+ 
+}
+.modal-content-h2{
+    font-size: 16px;
+    font-weight: 400;
+    
+    text-align: center;
+}
+
+.copyright-image {
+    max-width: 30%;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+@media (max-width: 600px) {
+    .Copyright-subheading {
+       text-align: center;
+      font-size: 3em;
+    }
+    .Copyright-timeline-content{
+        margin-left: -10vw;
+    }
+  }
+
+  

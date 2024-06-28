@@ -1,0 +1,36 @@
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    border-radius: 50%;
+    border: 3px solid var(--primary-pink);
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    color: var(--primary-pink);
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(147, 50, 129, 0.2);
+    transition: background-color 0.3s;
+    animation: float 2s ease-in-out infinite;
+  }
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .floating-button {
+        width: 35px;
+        height: 35px;  
+        font-size: 20px;
+    }
+  }
+  

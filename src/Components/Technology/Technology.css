@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+.Technology-App {
+  text-align: center;
+  padding: 30px;
+}
+
+.technology-section {
+
+  padding: 30px 20px;
+  margin: 20px 0;
+}
+
+.technology-heading {
+  color: var(--primary-pink);
+  font-size: 3.5em;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.technology-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.technology-card {
+  background: var(--primary-deepblack);
+  border-radius: 50%;
+  margin: 20px;
+  padding: 20px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px 5px rgba(192, 2, 70, 0.5);
+  transition: transform 0.6s;
+}
+
+.technology-card:hover {
+  transform: rotate(360deg);
+  /* Rotate the card 360 degrees on hover */
+}
+
+.technology-icon {
+  width: 90%;
+  height: 90%;
+}
+@media (max-width: 600px) {
+  .technology-heading {
+     text-align: center;
+    font-size: 3em;
+  }
+}

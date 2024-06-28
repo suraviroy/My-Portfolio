@@ -1,0 +1,23 @@
+:root {
+    --primary-black:  #121212;
+    --primary-pink: #C00246; 
+    --primary-white: white; 
+    --primary-deepblack: black; 
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--primary-pink);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary-white);
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-white);
+  }

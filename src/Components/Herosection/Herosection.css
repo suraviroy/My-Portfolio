@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+.herosection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.herosection-left-side {
+    flex: 1;
+    margin-left: 8vw;
+    margin-top: 10vh;
+}
+
+.herosection-right-side {
+    display: flex;
+    align-items: flex-start;
+}
+
+.herosection-text_hi {
+    font-size: 3.3em;
+    font-weight: bold;
+    color: var(--primary-white);
+}
+
+.herosection-text_suravi {
+    font-size: 3.5em;
+    font-weight: 800;
+    color: var(--primary-pink);
+}
+
+.herosection-text_details {
+    font-size: 1.3em;
+    font-weight: 400;
+    color: var(--primary-white);
+}
+
+.herosection-social-icons {
+    margin-top: 70px;
+}
+
+.herosection-social-icons a {
+    font-size: 2.2rem;
+    text-decoration: none;
+    margin-right: 20px;
+    color: var(--primary-pink);
+}
+
+.herosection-image-container {
+    position: absolute;
+    top: 25vh;
+    left: 65vw;
+    width: 400px;
+    z-index: 1;
+}
+
+.herosection-image-container img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 20px 10px rgba(192, 2, 70, 0.6);
+    border-radius: 50%;
+}
+
+.herosection-half-circle {
+    margin-top: 8vh;
+    width: 45vw;
+    height: 92vh;
+   box-shadow: 0 0 30px 15px rgba(192, 2, 70, 0.6);
+    background-color: var(--primary-pink);
+    clip-path: circle(49.3% at 90% 50%);
+}
+
+@media (max-width: 1160px) {
+    .herosection-image-container {
+        top: 32vh;
+        left: 65vw;
+        width: 300px;
+    }
+
+    .herosection-text_hi {
+        font-size: 2.5em;
+    }
+
+    .herosection-text_suravi {
+        font-size: 3em;
+    }
+
+    .herosection-text_details {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 915px) {
+    .herosection-image-container {
+        top: 35vh;
+        left: 60vw;
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .herosection {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .herosection-half-circle {
+        display: none;
+    }
+
+    .herosection-image-container {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-top: 18vh;
+        width: 200px;
+    }
+    .herosection-text_hi {
+        font-size: 2em;
+    }
+
+    .herosection-text_suravi {
+        font-size: 2em;
+    }
+
+    .herosection-text_details {
+        font-size: 0.7em;
+    }
+    .herosection-left-side {
+        flex: 1;
+        margin-left: 0vw;
+        margin-top: 5vh;
+    }
+    .herosection-right-side
+    {
+        margin-left: 0vw;
+    }
+    .herosection-social-icons {
+        margin-top: 40px;
+    }
+    
+    .herosection-social-icons a {
+        font-size: 1.5rem;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+}

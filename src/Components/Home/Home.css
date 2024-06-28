@@ -1,0 +1,59 @@
+.Home_fullPage {
+  background-color: var(--primary-black);
+  height: auto;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.Home_navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+.Home_fullPage {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+
+.Home_Herosection, 
+.Home_EducationWorkExp, 
+.Home_Skills, 
+.Home_Technology, 
+.Home_Publications, 
+.Home_Copyright, 
+.Home_Projects, 
+.Home_Achievements,
+.Home_FloatingButton {
+  position: relative;
+  z-index: 1;
+}
+
+
+.Home_Herosection {
+  padding-bottom: 16vh;
+}
+
+.Home_EducationWorkExp {
+  padding-bottom: 13vh;
+}
+.Home_Skills{
+  padding-bottom: 13vh;
+}
+
+#particles canvas {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}

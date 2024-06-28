@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: var(--primary-white);
+  position: relative;
+}
+
+.contact-circle {
+  position: absolute;
+  left: -50px;
+  top: 10px;
+  width: 700px;
+  height: 800px;
+  background-color: var(--primary-pink);
+  clip-path: circle(50% at 6% 50%);
+}
+
+.form-container {
+  text-align: center;
+  z-index: 1;
+}
+
+.form-container h2 {
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.form-container h1 {
+  margin: 5px 0;
+  font-size: 2.7rem;
+  padding-bottom: 6vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-field,
+.message-field {
+  background-color: var(--primary-deepblack);
+  border: 2px solid var(--primary-pink);
+  border-radius: 0.7rem;
+  color: var(--primary-white);
+  padding: 10px;
+  margin: 15px 0;
+  width: 500px;
+  box-shadow: 0 0 10px rgba(192, 2, 70, 0.6),
+       0 0 10px rgba(192, 2, 70, 0.6),
+       0 0 15px rgba(192, 2, 70, 0.6);
+}
+
+.message-field {
+  height: 160px;
+  resize: none;
+}
+
+.send-button {
+  background-color: var(--primary-deepblack);
+  border: 2px solid var(--primary-pink);
+  color: var(--primary-white);
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.send-button:hover {
+  background-color: var(--primary-pink);
+  color: black;
+}
+
+
+
+
+
+.error {
+  border-color: var(--primary-white);
+}
+
+.error-message {
+  color: var(--primary-white);
+  font-size: 0.8rem;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  text-align: left;
+  width: 500px;
+}
+
+@media (max-width: 500px) {
+  .contact-circle {
+    left: -50px;
+    top: 10px;
+    width: 500px;
+    height: 600px;
+    background-color:var(--primary-pink);
+    clip-path: circle(50% at 6% 50%);
+  }
+
+  .input-field, .message-field {
+    width: 300px;
+  }
+
+  .error-message {
+    width: 300px;
+  }
+}
+
