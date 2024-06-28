@@ -30,7 +30,7 @@ export default function Herosection() {
                         <a href="https://www.linkedin.com/in/suravi-roy-445814222?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin />
                         </a>
-                        <a href="https://www.instagram.com/suravi_15?igsh=ZTM4dnRmeno3b2dl" target="_blank" rel="noopener noreferrer" ><FaInstagram /></a>
+                        <a href="https://www.instagram.com/_suravi_15_?igsh=ZTM4dnRmeno3b2dl" ><FaInstagram /></a>
                         <a href="https://www.facebook.com/suravi.roy.9216?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
                     </div>
                 </div>
