@@ -3,7 +3,7 @@ import './ContactForm.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 import emailjs from "emailjs-com";
-import { ToastContainer, Zoom, toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function ContactForm() {
@@ -18,6 +18,8 @@ function ContactForm() {
     email: false,
     message: false,
   });
+
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -37,21 +39,24 @@ function ContactForm() {
 
     if (!newErrors.name && !newErrors.email && !newErrors.message) {
       console.log('Form submitted successfully:', formData);
+      setLoading(true);
       emailjs
-      .sendForm(
-        "service_ven908u",
-        "template_fr114hf",
-        e.target,
-        "cBhrSh9yaLNee1JK-"
-      )
-      .then((res) => {
-        console.log(res);
-        toast.success("Email sent successfully!");  // Add success toast
-      })
-      .catch((err) => {
-        console.log(err);
-        toast.error("Failed to send email.");  // Add error toast
-      });
+        .sendForm(
+          "service_ven908u",
+          "template_fr114hf",
+          e.target,
+          "cBhrSh9yaLNee1JK-"
+        )
+        .then((res) => {
+          console.log(res);
+          toast.success("Email sent successfully!");
+          setLoading(false);  // Stop loading when the email is sent successfully
+        })
+        .catch((err) => {
+          console.log(err);
+          toast.error("Failed to send email.");
+          setLoading(false);  // Stop loading if there is an error
+        });
       setFormData({
         name: '',
         email: '',
@@ -66,7 +71,7 @@ function ContactForm() {
 
   return (
     <div className="contact-container">
-      <div className="contact-circle" ></div>
+      <div className="contact-circle"></div>
       <div className="form-container" data-aos="fade-left" data-aos-delay='200'>
         <h2>GET IN TOUCH</h2>
         <h1>Contact Me</h1>
@@ -97,12 +102,14 @@ function ContactForm() {
             onChange={handleChange}
           ></textarea>
           {errors.message && <span className="error-message">This field is required</span>}
-          <button type="submit" className="send-button">Send</button>
+          <button type="submit" className="send-button" disabled={loading}>
+            {loading ? <span className="spinner"></span> : 'Send'}
+          </button>
         </form>
       </div>
       <ToastContainer
         position="bottom-right"
-        autoClose={5000}
+        autoClose={3000}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick
@@ -110,7 +117,7 @@ function ContactForm() {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        theme="dark"
+        theme="dark" 
       />
     </div>
   );

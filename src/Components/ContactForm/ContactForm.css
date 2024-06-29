@@ -83,11 +83,11 @@ form {
 
 
 .error {
-  border-color: var(--primary-white);
+  border-color: red ;
 }
 
 .error-message {
-  color: var(--primary-white);
+  color: red;
   font-size: 0.8rem;
   margin-top: -10px;
   margin-bottom: 10px;
@@ -98,7 +98,7 @@ form {
 @media (max-width: 500px) {
   .contact-circle {
     left: -50px;
-    top: 10px;
+    top: 25px;
     width: 500px;
     height: 600px;
     background-color:var(--primary-pink);
@@ -114,3 +114,22 @@ form {
   }
 }
 
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-left-color: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
