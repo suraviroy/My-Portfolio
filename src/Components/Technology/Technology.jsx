@@ -16,7 +16,7 @@ import bash from '../../images/bash.png'
 import figma from '../../images/figma.png'
 import leaf from '../../images/leaflet.png'
 import boot from '../../images/boot.png'
-import mui from '../../images/Mui.png'
+import mui from '../../images/mui1.png'
 
 
 export default function Technology() {

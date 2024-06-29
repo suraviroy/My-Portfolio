@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import './ContactForm.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
+import emailjs from "emailjs-com";
+import { ToastContainer, Zoom, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -34,7 +37,21 @@ function ContactForm() {
 
     if (!newErrors.name && !newErrors.email && !newErrors.message) {
       console.log('Form submitted successfully:', formData);
-      // Add your form submission logic here
+      emailjs
+      .sendForm(
+        "service_ven908u",
+        "template_fr114hf",
+        e.target,
+        "cBhrSh9yaLNee1JK-"
+      )
+      .then((res) => {
+        console.log(res);
+        toast.success("Email sent successfully!");  // Add success toast
+      })
+      .catch((err) => {
+        console.log(err);
+        toast.error("Failed to send email.");  // Add error toast
+      });
       setFormData({
         name: '',
         email: '',
@@ -45,12 +62,12 @@ function ContactForm() {
 
   React.useEffect(() => {
     AOS.init();
-}, []);
+  }, []);
 
   return (
     <div className="contact-container">
       <div className="contact-circle" ></div>
-      <div className="form-container" data-aos="fade-left" data-aos-delay= '200'>
+      <div className="form-container" data-aos="fade-left" data-aos-delay='200'>
         <h2>GET IN TOUCH</h2>
         <h1>Contact Me</h1>
         <form onSubmit={handleSubmit}>
@@ -83,7 +100,18 @@ function ContactForm() {
           <button type="submit" className="send-button">Send</button>
         </form>
       </div>
-     
+      <ToastContainer
+        position="bottom-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </div>
   );
 }
