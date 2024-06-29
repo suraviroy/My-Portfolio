@@ -42,7 +42,14 @@ body {
         0 0 10px rgba(192, 2, 70, 0.6),
         0 0 15px rgba(192, 2, 70, 0.6);
     text-align: center;
-    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px rgba(192, 2, 70, 0.8),
+        0 0 15px rgba(192, 2, 70, 0.8),
+        0 0 20px rgba(192, 2, 70, 0.8);
 }
 .skills-icon {
     width: 100px;
