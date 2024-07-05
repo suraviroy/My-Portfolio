@@ -3,6 +3,7 @@ import './Copyright.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 import copyrightImage from '../../images/copy.jpeg';
+import copyrightImage2 from '../../images/copy2.jpeg';
 
 export default function Copyright() {
     const Copyright = [
@@ -12,6 +13,13 @@ export default function Copyright() {
             publication: "Copyright No.- SW-18318/2024",
             date: "February 2024",
             image: copyrightImage,
+        },
+        {
+            name: '“Bharat Raahat Kendra is a  platform where all types of rescue agencies and emergency services which include disaster management agencies, medical service providers, police station, fire station, news channel etc can come together to handle any type of disaster. ”',
+            author: "Authors- Suravi Roy, Tiasha Manda, Debraj Chatterjee, Sakshi Srivastava and Aitijhya Saha",
+            publication: "Copyright No.- SW-19141/2024",
+            date: "July 2024",
+            image: copyrightImage2,
         },
        
     ];
@@ -42,7 +50,7 @@ export default function Copyright() {
                         <div className="Copyright-timeline-content" data-aos="fade-right"  data-aos-delay={0 + index * 200}>
                             <h3>{Copyright.name}</h3>
                             <p>{Copyright.author}</p>
-                            <p>{Copyright.publication}</p>
+                            {/* <p>{Copyright.publication}</p> */}
                         </div>
                     </div>
                 ))}

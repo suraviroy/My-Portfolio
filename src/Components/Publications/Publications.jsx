@@ -4,6 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import publicationImage1 from '../../images/paper1.jpeg';
 import publicationImage2 from '../../images/paper2.jpeg';
+import publicationImage3 from '../../images/paper3.jpeg';
 
 export default function Publications() {
     const Publications = [
@@ -20,6 +21,13 @@ export default function Publications() {
             publication: "Name of the publication- IEEE",
             date: "May 2024",
             image: publicationImage2,
+        },
+        {
+            name: "“Biometric Identification using Gait Analysis: Methods, Characteristics, and Difficulties”",
+            author: "Authors- Suravi Roy, Sakshi Srivastava, Ritwika Acharya, Arya Raj, Bitan Misra and Nilanjan Dey",
+            publication: "Name of the publication- IEEE",
+            date: "July 2024",
+            image: publicationImage3,
         },
     ];
 
