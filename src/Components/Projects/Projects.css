@@ -86,3 +86,8 @@ body {
   text-align: center;
   color: var(--primary-white);
 }
+@media (max-width: 500px) {
+  .project-card-back p {
+   font-size: 14px;
+  }
+}

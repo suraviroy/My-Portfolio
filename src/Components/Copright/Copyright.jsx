@@ -15,7 +15,7 @@ export default function Copyright() {
             image: copyrightImage,
         },
         {
-            name: '“Bharat Raahat Kendra is a  platform where all types of rescue agencies and emergency services which include disaster management agencies, medical service providers, police station, fire station, news channel etc can come together to handle any type of disaster. ”',
+            name: '“Bharat Raahat Kendra is a  platform where all types of rescue agencies and emergency services can come together to handle any type of disaster. ”',
             author: "Authors- Suravi Roy, Tiasha Manda, Debraj Chatterjee, Sakshi Srivastava and Aitijhya Saha",
             publication: "Copyright No.- SW-19141/2024",
             date: "July 2024",
