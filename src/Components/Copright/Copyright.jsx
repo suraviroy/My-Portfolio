@@ -10,14 +10,14 @@ export default function Copyright() {
         {
             name: '“Advaya: A Customizable Online Assessment Platform to Assist Organisations and Institutions in Identifying and Selecting the Right Skilled and Talented Candidates”',
             author: "Authors- Suravi Roy, Tiasha Manda, and Debraj Chatterjee",
-            publication: "Copyright No.- SW-18318/2024",
+            publication: "Registration Number - SW-18318/2024",
             date: "February 2024",
             image: copyrightImage,
         },
         {
             name: '“Bharat Raahat Kendra is a  platform where all types of rescue agencies and emergency services can come together to handle any type of disaster. ”',
             author: "Authors- Suravi Roy, Tiasha Manda, Debraj Chatterjee, Sakshi Srivastava and Aitijhya Saha",
-            publication: "Copyright No.- SW-19141/2024",
+            publication: "Registration Number- SW-19141/2024",
             date: "July 2024",
             image: copyrightImage2,
         },
@@ -49,8 +49,8 @@ export default function Copyright() {
                         <div className="Copyright-timeline-date">{Copyright.date}</div>
                         <div className="Copyright-timeline-content" data-aos="fade-right"  data-aos-delay={0 + index * 200}>
                             <h3>{Copyright.name}</h3>
-                            <p>{Copyright.author}</p>
-                            {/* <p>{Copyright.publication}</p> */}
+                            {/* <p>{Copyright.author}</p> */}
+                            <p>{Copyright.publication}</p>
                         </div>
                     </div>
                 ))}

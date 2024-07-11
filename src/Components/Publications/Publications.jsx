@@ -11,21 +11,21 @@ export default function Publications() {
         {
             name: '“Towards Zero Hunger: A Platform for Sustainable Food Distribution and Collaboration in Achieving the United Nations’ Sustainable Development Goal”',
             author: "Authors- Suravi Roy, Tiasha Mandal, Parthib Das, and Nilanjana Dutta Roy",
-            publication: "Name of the publication- Springer",
+            publication: "Name of the publication - Springer,  ICSTA 2023 ",
             date: "December 2023",
             image: publicationImage1,
         },
         {
             name: "“Empowering Public Safety through AI-Driven Criminal Identification and Real-Time Record Management”",
             author: "Authors- Suravi Roy and Tiasha Mandal",
-            publication: "Name of the publication- IEEE",
+            publication: "Name of the publication - IEEE, FOSET 2024",
             date: "May 2024",
             image: publicationImage2,
         },
         {
             name: "“Biometric Identification using Gait Analysis: Methods, Characteristics, and Difficulties”",
             author: "Authors- Suravi Roy, Sakshi Srivastava, Ritwika Acharya, Arya Raj, Bitan Misra and Nilanjan Dey",
-            publication: "Name of the publication- IEEE",
+            publication: "Name of the publication - IEEE, ACET 2024 ",
             date: "July 2024",
             image: publicationImage3,
         },
@@ -57,7 +57,7 @@ export default function Publications() {
                         <div className="Publications-timeline-date">{Publications.date}</div>
                         <div className="Publications-timeline-content" data-aos="fade-left" data-aos-delay={0 + index * 200}>
                             <h3>{Publications.name}</h3>
-                            <p>{Publications.author}</p>
+                            {/* <p>{Publications.author}</p> */}
                             <p>{Publications.publication}</p>
                         </div>
                     </div>

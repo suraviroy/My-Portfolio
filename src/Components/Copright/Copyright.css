@@ -43,10 +43,10 @@ body {
 .Copyright-timeline-item:before {
     content: '';
     position: absolute;
-    right: -37px;
+    right: -39px;
     top: 5px;
-    height: 14px;
-    width: 14px;
+    height: 15px;
+    width: 15px;
     background-color: var(--primary-pink);
     border-radius: 50%;
 

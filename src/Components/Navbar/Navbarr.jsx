@@ -30,7 +30,7 @@ export default function Navbarr() {
                       <a onClick={() => scrollToSection('home')}>Home</a>
                     <a onClick={() => scrollToSection('projects')}>Projects</a>
                     <a onClick={() => scrollToSection('experience')}>Experience</a>
-                    <a onClick={() => scrollToSection('achievement')}>Achievement</a>
+                    <a onClick={() => scrollToSection('achievement')}>Achievements</a>
                     <a onClick={() => scrollToSection('publications')}>Publications</a>
                 </div>
             </nav>

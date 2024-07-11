@@ -16,7 +16,9 @@ export default function Skills() {
     <div className="skills-container">
       <h1 className="skills-heading">Skills</h1>
       <p className="skills-description">
-        I'm a skilled software developer with expertise in JavaScript, React, Node.js, and Solidity. I excel in creating efficient, scalable, and user-friendly solutions. As a quick learner and collaborative team player, I'm dedicated to solving real-world problems. Let's bring your ideas to life!
+        I'm a skilled software developer with expertise in JavaScript, React, Node js, and MongoDB . 
+        I excel in creating efficient, scalable, and user-friendly solutions. As a quick learner and
+         collaborative team player, I'm dedicated to solving real-world problems. Let's bring your ideas to life!
       </p>
       <div className="skills-boxes">
         <div className="skills-box" data-aos="fade-right">
