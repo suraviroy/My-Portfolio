@@ -38,7 +38,7 @@ export default function Technology() {
     { name: 'MongoDB', icon: figma },
     { name: 'Leaflet', icon: leaf },
     { name: 'Bootstarp', icon: boot },
-    { name: 'Material Ui', icon: mui },
+    // { name: 'Material Ui', icon: mui },
   ];
 
   React.useEffect(() => {
