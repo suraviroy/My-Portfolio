@@ -9,7 +9,7 @@ export default function Education() {
     {
       details1: "B. Tech. – Computer Science and Engineering",
       details2: "Techno International New Town",
-      details3: "Year of Passing - 2025 | CGPA: 9.0"
+      details3: "Year of Passing - 2025 | CGPA: 9.03"
     },
     {
       details1: "Class 12 – Science",
@@ -19,7 +19,7 @@ export default function Education() {
     {
       details1: "Class 10 – General",
       details2: "St Stephens's School Dum Dum | Board- CISCE",
-      details3: "Year of Passing - 2019 | Percentage- 89.5"
+      details3: "Year of Passing - 2019 | Percentage- 89.4"
     },
   ];
 
