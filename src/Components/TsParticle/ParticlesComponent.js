@@ -8,7 +8,7 @@ const ParticlesComponent = (props) => {
     const calculateParticlesNumber = () => {
       const screenWidth = window.innerWidth;
       if (screenWidth < 600) {
-        return 30; // Adjust for smaller screens
+        return 40; // Adjust for smaller screens
       } else {
         return 90; // Default number of particles for larger screens
       }

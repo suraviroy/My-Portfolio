@@ -7,15 +7,15 @@ import 'aos/dist/aos.css'
 export default function WorkExp() {
   const timelineData = [
     {
-      details1: "NextGen Analytics",
+      details1: "Next Generation Consultancy Services ",
       details2: "Position - Frontend Web Developer",
-      details3: "Tenure of Job- January 2024 – June 2024",
+      details3: "Tenure of Job - December 2023 – May 2024 ",
       details4: "Skills – React Js, Figma"
     },
     {
       details1: "Institute of Pulmocare & Research",
       details2: "Position- Backend Developer",
-      details3: "Tenure of Job- February 2024 – Cont.",
+      details3: "Tenure of Job - February 2024 – Cont.",
       details4: "Skills – Node Js, Express Js, MongoDB, Figma"
     },
    
