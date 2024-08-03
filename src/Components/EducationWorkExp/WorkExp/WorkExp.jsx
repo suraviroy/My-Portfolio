@@ -15,7 +15,7 @@ export default function WorkExp() {
     {
       details1: "Institute of Pulmocare & Research",
       details2: "Position- Backend Developer",
-      details3: "Tenure of Job - February 2024 – Cont.",
+      details3: "Tenure of Job - February 2024 – Present.",
       details4: "Skills – Node Js, Express Js, MongoDB, Figma"
     },
    
@@ -31,7 +31,8 @@ export default function WorkExp() {
         <div className="WorkExp-circle">
         <i className="fas fa-briefcase"></i>
         </div>
-        <div className='WorkExp-txt'>Work Experience</div>
+        {/* <div className='WorkExp-txt'>Work Experience</div> */}
+        <div className='WorkExp-txt'>Internship</div>
       </div>
       <div className="WorkExp-timeline">
         {timelineData.map((item, index) => (

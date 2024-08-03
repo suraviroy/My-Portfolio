@@ -21,3 +21,6 @@
   ::-webkit-scrollbar-thumb:hover {
     background: var(--primary-white);
   }
+  /* body {
+    cursor: url('data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjMwIiB2aWV3Qm94PSIwIDAgMzAgMzAiIHdpZHRoPSIzMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE1IDBDMTkuNDE1NSAwIDIyLjg4NDUgMy40ODg4MiAyMi44ODQ1IDhDMjIuODg0NSAxMi41MTE4IDE5LjQxNTUgMTYgMTUgMTZDMTAuNTg0NSAxNiA3LjExNTQ1IDEyLjUxMTggNy4xMTU0NSA4QzcuMTE1NDUgMy40ODg4MiAxMC41ODQ1IDAgMTUgMEMxOS40MTU1IDAgMjIuODg0NSAzLjQ4ODgyIDIyLjg4NDUgOFoiIGZpbGw9InllbGxvdyIvPgo8L3N2Zz4K'), auto;
+  } */

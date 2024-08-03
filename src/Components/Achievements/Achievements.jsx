@@ -89,6 +89,12 @@ const achievements = [
     organization: 'Organised by RCC Institute of Information Technology',
     picture: sbh24,
   },
+  {
+    date: 'September 2024',
+    title: 'Japan-Sakura Student Science Exchange Program',
+    organization: 'Selected as one of the top six students from my college for the Japan-Sakura Student Science Exchange Program, in collaboration with Okayama University and Osaka University, fully funded by the Japan government',
+    picture: null,
+  },
 ];
 
 
@@ -123,7 +129,7 @@ const Achievements = () => {
           <div className="Achievements-content">
             <h3>{achievement.date}</h3>
             <p>{achievement.title}</p>
-            <i><p>{achievement.organization}</p></i>
+            <i><p  style={{ lineHeight: '1.3' }}>{achievement.organization}</p></i>
           </div>
         </div>
       ))}
