@@ -55,6 +55,7 @@ import sbh23 from '../../images/sbh2023.jpeg';
 import sih from '../../images/sih.jpeg';
 import ciem from '../../images/ciem.jpeg';
 import sbh24 from '../../images/sbh2024.jpeg';
+import japan from '../../images/japan.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 
@@ -79,7 +80,7 @@ const achievements = [
   },
   {
     date: 'January 2024',
-    title: '2nd position at Celsius Hackathon 2024',
+    title: 'Winner of the Celsius Hackathon 2024',
     organization: 'Organised by Calcutta Institute of Engineering and Management',
     picture: ciem,
   },
@@ -92,8 +93,8 @@ const achievements = [
   {
     date: 'September 2024',
     title: 'Japan-Sakura Student Science Exchange Program',
-    organization: 'Selected as one of the top six students from my college for the Japan-Sakura Student Science Exchange Program, in collaboration with Okayama University and Osaka University, fully funded by the Japan government',
-    picture: null,
+    organization: 'Selected as one of the top six students from my college for the Japan-Sakura Student Science Exchange Program, in collaboration with Okayama University, Osaka University and Tokyo University, fully funded by the Japan government',
+    picture: japan,
   },
 ];
 
@@ -112,7 +113,7 @@ const Achievements = () => {
   };
   React.useEffect(() => {
     AOS.init();
-}, []);
+  }, []);
   return (
     <div className="Achievements-timeline">
       <div className="Achievements-timeline-h1">WHAT I HAVE ACHIEVE SO FAR</div>
@@ -120,16 +121,21 @@ const Achievements = () => {
       <div className="Achievements-timelineP"></div>
       {achievements.map((achievement, index) => (
         <div
-          key={index} 
+          key={index}
           data-aos={index % 2 === 0 ? 'fade-right' : 'fade-left'}
           data-aos-delay={0 + index * 200}
           className={`Achievements-container ${index % 2 === 0 ? 'left' : 'right'}`}
           onClick={() => openModal(achievement)}
         >
           <div className="Achievements-content">
-            <h3>{achievement.date}</h3>
+            <h3  style={{
+                color: '#C00246',
+                cursor: "pointer"
+              }}> 
+              {achievement.date} 🔗
+            </h3>
             <p>{achievement.title}</p>
-            <i><p  style={{ lineHeight: '1.3' }}>{achievement.organization}</p></i>
+            <i><p style={{ lineHeight: '1.3' }}>{achievement.organization}</p></i>
           </div>
         </div>
       ))}
