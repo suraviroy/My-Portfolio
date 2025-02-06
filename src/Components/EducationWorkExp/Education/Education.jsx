@@ -9,7 +9,7 @@ export default function Education() {
     {
       details1: "B. Tech. – Computer Science and Engineering",
       details2: "Techno International New Town",
-      details3: "Year of Passing - 2025 | CGPA: 9.03"
+      details3: "Year of Passing - 2025 | CGPA: 8.9"
     },
     {
       details1: "Class 12 – Science",
