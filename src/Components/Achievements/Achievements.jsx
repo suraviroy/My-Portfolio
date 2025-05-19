@@ -96,6 +96,18 @@ const achievements = [
     organization: 'Selected as one of the top six students from my college for the Japan-Sakura Student Science Exchange Program, in collaboration with Okayama University, Osaka University and Tokyo University, fully funded by the Japan government',
     picture: japan,
   },
+  {
+    date: 'May 2025',
+    title: 'First Runner-up at Smart Bengal Hackathon 2025',
+    organization: 'Organised by RCC Institute of Information Technology',
+    picture: null,
+  },
+  {
+    date: 'May 2025',
+    title: 'Winner of Proto-X prototype competition 2025',
+    organization: 'Organised by Meghnad Saha Institute of Technology',
+    picture: null,
+  },
 ];
 
 

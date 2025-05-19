@@ -15,7 +15,7 @@ export default function WorkExp() {
     {
       details1: "Institute of Pulmocare & Research",
       details2: "Position- Backend Developer",
-      details3: "Tenure of Job - February 2024 – Present.",
+      details3: "Tenure of Job - February 2024 – April 2025.",
       details4: "Skills – Node Js, Express Js, MongoDB, Figma"
     },
    

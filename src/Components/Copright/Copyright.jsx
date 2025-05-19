@@ -4,6 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'
 import copyrightImage from '../../images/copy.jpeg';
 import copyrightImage2 from '../../images/copy2.jpeg';
+import copyrightImage3 from '../../images/copy3.png';
 
 export default function Copyright() {
     const Copyright = [
@@ -20,6 +21,13 @@ export default function Copyright() {
             publication: "Registration Number- SW-19141/2024",
             date: "July 2024",
             image: copyrightImage2,
+        },
+        {
+            name: '“PulmoConnect is an integrated mobile platform for enhanced doctor-patient communication at the Institute of Pulmocare and Research.”',
+            author: "Authors- Suravi Roy, Tiasha Manda, Nilanjana Dutta Roy, Swagata Paul and Partha Sarathi Bhattacharyya",
+            publication: "Registration Number- SW-20180/2025",
+            date: "February 2025",
+            image: copyrightImage3,
         },
        
     ];
